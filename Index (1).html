@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blackfrog - AI Solutions for Productivity and Growth</title>
+    <link href="https://fonts.googleapis.com/css2?family=Chicago&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="desktop">
+        <div class="menubar">
+            <div>
+                <span class="apple-menu">🍎</span>
+                <span class="menu-item" onclick="openWindow('about')">About</span>
+                <span class="menu-item" onclick="openWindow('services')">Services</span>
+                <span class="menu-item" onclick="openWindow('contact')">Contact</span>
+                <span class="menu-item" onclick="openWindow('cmd')">CMD</span>
+                <span class="menu-item" onclick="openWindow('chatbot')">Chatbot</span>
+            </div>
+            <div id="clock">5:33 PM</div>
+        </div>
+        
+        <div class="taskbar">
+            <div class="start-btn" onclick="toggleStartMenu()">Start</div>
+            <div id="taskbarItems"></div>
+        </div>
+
+        <div class="start-menu" id="startMenu">
+            <div class="start-menu-item" onclick="openWindow('about')">About Us</div>
+            <div class="start-menu-item" onclick="openWindow('services')">Our Services</div>
+            <div class="start-menu-item" onclick="openWindow('contact')">Contact</div>
+            <div class="start-menu-item" onclick="openWindow('cmd')">Command Line</div>
+            <div class="start-menu-item" onclick="openWindow('chatbot')">Chatbot</div>
+        </div>
+    </div>
+
+    <!-- Firebase SDK -->
+    <script src="https://www.gstatic.com/firebasejs/8.10.1/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.10.1/firebase-database.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
